@@ -1,36 +1,38 @@
+import { Link } from 'react-router-dom';
 import Card from '../components/Card';
+import { useI18n } from '../i18n/useI18n';
 import './Homepage.css';
 
 function Homepage() {
+  const { t } = useI18n();
+
   return (
     <div className="docPage">
       <header className="hero">
-        <h1>Home Page</h1>
-        <p className="subtitle">
-          Welcome to the playground 🚀 — a space for experimenting with React,
-          hooks, routing and UI patterns.
-        </p>
+        <h1>{t('homepage.title')}</h1>
+        <p className="subtitle">{t('homepage.subtitle')}</p>
       </header>
 
       <section className="grid">
         <Card>
-          <h2>⚛️ React Playground</h2>
-          <p>Test hooks, components and patterns without constraints.</p>
+          <h2>{t('homepage.reactPlayground')}</h2>
+          <p>{t('homepage.reactPlaygroundDesc')}</p>
         </Card>
 
         <Card>
-          <h2>🧭 Routing</h2>
-          <p>Navigate between pages using React Router v6.</p>
+          <h2>{t('homepage.routing')}</h2>
+          <p>{t('homepage.routingDesc')}</p>
         </Card>
 
         <Card>
-          <h2>🎨 UI Experiments</h2>
-          <p>Light/Dark theme toggle and layout experiments.</p>
+          <h2>{t('homepage.counterHook')}</h2>
+          <p>{t('homepage.counterHookDesc')}</p>
+          <Link to="/counter">{t('homepage.goToCounter')}</Link>
         </Card>
       </section>
 
       <section className="codeBlock">
-        <div className="codeHeader">Quick snippet</div>
+        <div className="codeHeader">{t('homepage.quickSnippet')}</div>
         <pre>
           {`function hello() {
   console.log("Hello playground 🚀");

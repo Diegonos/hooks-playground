@@ -1,0 +1,33 @@
+{
+  "navbar": {
+    "home": "Home",
+    "counter": "Counter",
+    "doubleCounter": "Double Counter"
+  },
+  "homepage": {
+    "title": "Home Page",
+    "subtitle": "Benvenuto nel playground 🚀 — uno spazio per sperimentare React, hook, routing e pattern UI.",
+    "reactPlayground": "⚛️ React Playground",
+    "reactPlaygroundDesc": "Testa hook, componenti e pattern senza vincoli.",
+    "routing": "🧭 Routing",
+    "routingDesc": "Naviga tra le pagine usando React Router v6.",
+    "counterHook": "🧪 Counter Hook",
+    "counterHookDesc": "Prova un counter basato su un hook personalizzato.",
+    "goToCounter": "Vai al counter",
+    "quickSnippet": "Snippet veloce"
+  },
+  "counterPage": {
+    "title": "Counter Hook",
+    "subtitle": "Qui puoi testare un counter basato su un hook personalizzato.",
+    "reset": "Reset",
+    "hookSupport": "Hook a supporto",
+    "backHome": "Torna a Home"
+  },
+  "doubleCounterPage": {
+    "title": "Double Counter Hook",
+    "subtitle": "Qui puoi testare un counter doppio basato sullo stesso hook.",
+    "reset": "Reset",
+    "hookUsage": "Utilizzo dell'hook due volte"
+  },
+  "languageToggle": "EN"
+}
