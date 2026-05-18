@@ -34,6 +34,22 @@ export default function Navbar() {
         >
           {t('navbar.doubleCounter')}
         </NavLink>
+        <NavLink
+          to="/legacy-counter"
+          className={({ isActive }) =>
+            isActive ? 'navLink active' : 'navLink'
+          }
+        >
+          {t('navbar.legacyCounter')}
+        </NavLink>
+        <NavLink
+          to="/rtk-counter"
+          className={({ isActive }) =>
+            isActive ? 'navLink active' : 'navLink'
+          }
+        >
+          {t('navbar.rtkCounter')}
+        </NavLink>
       </div>
 
       <div className="navRight">

@@ -50,3 +50,18 @@
   color: #60a5fa;
   text-decoration: none;
 }
+
+.counterHeader {
+  margin-bottom: 20px;
+}
+
+.counterHeader h2 {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.counterDescription {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

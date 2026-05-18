@@ -2,7 +2,9 @@
   "navbar": {
     "home": "Home",
     "counter": "Counter",
-    "doubleCounter": "Double Counter"
+    "doubleCounter": "Double Counter",
+    "legacyCounter": "Legacy Redux Counter",
+    "rtkCounter": "RTK Counter"
   },
   "homepage": {
     "title": "Home Page",
@@ -28,6 +30,30 @@
     "subtitle": "Here you can test a double counter based on the same hook.",
     "reset": "Reset",
     "hookUsage": "Hook usage twice"
+  },
+  "legacyCounter": {
+    "title": "Legacy Redux Counter",
+    "subtitle": "This page implements a counter using classic Redux, with explicit separation between action types, action creators, reducers, and the global store.",
+    "description": {
+      "part1": "State changes are made through `dispatch()` of manual Redux actions like `increment`, `decrement`, and `reset`.",
+      "part2": "The global state is read through `useSelector()`, while the update logic is managed by reducers based on `switch-case`.",
+      "part3": "The goal of this page is to demonstrate the traditional Flux pattern: UI → dispatch(action) → reducer → store update → re-render.",
+      "part4": "This approach highlights the boilerplate required by classic Redux and allows for a deeper understanding of fundamental Redux concepts, such as immutability, pure functions, and centralized state management."
+    },
+    "reset": "Reset",
+    "implementation": "Redux classico con actions e reducers"
+  },
+  "rtkCounter": {
+     "title": "Redux Toolkit Counter",
+    "subtitle": "This page implements the same behavior as the counter using Redux Toolkit (RTK), the modern approach officially recommended by the Redux team.",
+    "description": {
+      "part1": "The state logic is defined through `createSlice()`, which automatically generates actions and reducers based on a single centralized configuration.",
+      "part2": "RTK internally uses Immer to allow seemingly mutable updates to the state while maintaining immutability under the hood.",
+      "part3": "The store is configured through `configureStore()`, which automatically includes middleware and optimizations commonly needed in modern Redux applications.",
+      "part4": "The goal of this page is to show how Redux Toolkit drastically reduces the boilerplate compared to traditional Redux, while maintaining the same Flux architecture and principles of centralized state management."
+    },
+    "reset": "Reset",
+    "implementation": "Redux Toolkit with createSlice and configureStore"
   },
   "languageToggle": "IT"
 }
