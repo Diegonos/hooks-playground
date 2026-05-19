@@ -5,6 +5,7 @@ import CounterPage from './pages/CounterPage';
 import DoubleCounterPage from './pages/DoubleCounterPage';
 import RtkCounter from './pages/RtkCounter';
 import LegacyCounter from './pages/LegacyCounter';
+import ThunkPlaygroundPage from './pages/ThunkPlayground';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/double-counter" element={<DoubleCounterPage />} />
         <Route path="/legacy-counter" element={<LegacyCounter />} />
         <Route path="/rtk-counter" element={<RtkCounter />} />
+        <Route path="/thunk-playground" element={<ThunkPlaygroundPage />} />
       </Routes>
     </div>
   );

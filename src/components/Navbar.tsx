@@ -50,6 +50,14 @@ export default function Navbar() {
         >
           {t('navbar.rtkCounter')}
         </NavLink>
+        <NavLink
+          to="/thunk-playground"
+          className={({ isActive }) =>
+            isActive ? 'navLink active' : 'navLink'
+          }
+        >
+          {t('navbar.thunkPlayground')}
+        </NavLink>
       </div>
 
       <div className="navRight">

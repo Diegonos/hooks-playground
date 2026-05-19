@@ -5,6 +5,16 @@
     "doubleCounter": "Double Counter",
     "legacyCounter": "Legacy Redux Counter",
     "rtkCounter": "RTK Counter"
+    ,"thunkPlayground": "Thunk Playground"
+  },
+  "thunkPlayground": {
+    "title": "Redux Thunk Playground",
+    "subtitle": "Questa pagina mostra il lifecycle completo di una async action Redux Toolkit.",
+    "fetch": "Recupera utenti",
+    "fetchForce": "Recupera utenti (forzando l'errore)",
+    "loading": "Caricamento utenti...",
+    "error": "Errore:",
+    "users": "Utenti"
   },
   "homepage": {
     "title": "Home Page",
